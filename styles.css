@@ -1,0 +1,281 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #F77754;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  animation:
+    typing 1s steps(40, end),
+    blink-caret .50s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: #F77754;
+  }
+}
+
+.navbar {
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+
+.navbar-icon {
+  margin: 0 4% 0 1%;
+}
+
+.navbar-icon:hover {
+  transform: scale(1.5);
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.main-display {
+  background-color: #EEEEEE;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-heading {
+  color: #F77754;
+  font-family: 'Roboto Slab', serif;
+  font-size: 6vw;
+}
+
+.main-sub-heading {
+  color: #393E46;
+  font-size: 2.5vw;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.btn1 {
+  color: #fab19d;
+  font-size: 3rem;
+  position: absolute;
+  bottom: 50px;
+}
+
+.second-display {
+  /* background-color: #212121; */
+  /* color: #F6F6F6; */
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.text-row {
+  display: flex;
+  height: 100%;
+}
+
+.inline-text {
+  display: contents;
+  color: #F77754;
+}
+
+.first-para {
+  background-color: #393E46;
+  color: #EEEEEE;
+  font-size: 1.25vw;
+  text-align: left;
+  padding: 100px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.second-para {
+  font-size: 1.25vw;
+  text-align: left;
+  color: #393E46;
+  background-color: #F77754;
+  padding: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .first-para, .second-para {
+    font-size: 0.75rem;
+    padding: 5%;
+  }
+}
+
+.third-display {
+  background-color: #EEEEEE;
+  color: #393E46;
+  /* height: 100vh; */
+  min-height: 100vh;
+}
+
+.row {
+  padding: 5% 2%
+}
+
+.cards {
+  padding: 1%;
+}
+
+.card:hover {
+  background-color: #393E46;
+  color: #de7c5b;
+  transition: all 250ms ease;
+}
+
+.button-links1 {
+  border: 1px outset #222831;
+  background-color: #EEEEEE;
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+  margin: 4% 0 0 0;
+}
+
+.button-links1:hover {
+  background-color: #F77754;
+  color: #EEEEEE;
+  transition: all 250ms ease;
+}
+
+.button-links2 {
+  border: 1px outset #222831;
+  background-color: #EEEEEE;
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+  margin: 4% 0 0 0;
+}
+
+.button-links2:hover {
+  background-color: #393E46;
+  color: #EEEEEE;
+  transition: all 250ms ease;
+}
+
+.fourth-display {
+  width: 100vw;
+  height: 100vh;
+  background-color: #393E46;
+  color: #EEEEEE;
+}
+
+.skills-row {
+  padding: 2em;
+  width: 50%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.bar {
+  position: relative;
+  border: 2px solid #F77754;
+  margin-top: 5px;
+}
+
+.bar div {
+  position: relative;
+  width: 0;
+  height: 16px;
+  background-color: #F77754;
+}
+
+skills:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+#html-bar {
+  animation: html-fill 1s forwards;
+}
+
+@keyframes html-fill {
+  100% {
+    width: 70%;
+  }
+}
+
+#python-bar {
+  animation: python-fill 1s forwards;
+}
+
+@keyframes python-fill {
+  100% {
+    width: 95%;
+  }
+}
+
+#jquery-bar {
+  animation: jquery-fill 1s forwards;
+}
+
+@keyframes jquery-fill {
+  100% {
+    width: 50%;
+  }
+}
+
+#express-bar {
+  animation: express-fill 1s forwards;
+}
+
+@keyframes express-fill {
+  100% {
+    width: 50%;
+  }
+}
+
+.footer {
+  background-color: #F77754;
+  color: #393E46;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer i {
+  margin: 4px;
+}
