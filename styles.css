@@ -255,7 +255,7 @@ skills:not(:last-child) {
 
 @keyframes html-fill {
   100% {
-    width: 70%;
+    width: 85%;
   }
 }
 
@@ -269,11 +269,11 @@ skills:not(:last-child) {
   }
 }
 
-#jquery-bar {
-  animation: jquery-fill 1s forwards;
+#nodejs-bar {
+  animation: nodejs-fill 1s forwards;
 }
 
-@keyframes jquery-fill {
+@keyframes nodejs-fill {
   100% {
     width: 50%;
   }
@@ -285,7 +285,7 @@ skills:not(:last-child) {
 
 @keyframes express-fill {
   100% {
-    width: 50%;
+    width: 75%;
   }
 }
 
